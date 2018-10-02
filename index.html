@@ -12,13 +12,13 @@
 		</figure>
 		<nav>
 			<ol>
-				<a href="#">Portafolio</a>
+				<a href="#portafolio">Portafolio</a>
 			</ol>
 			<ol>
-				<a href="#">Experiencia</a>
+				<a href="#eventos">Experiencia</a>
 			</ol>
 			<ol>
-				<a href="#">Trabajemos juntos</a>
+				<a href="#contacto">Trabajemos juntos</a>
 			</ol>
 		</nav>
 	</header>
@@ -26,7 +26,7 @@
 		<h1>Hola! Soy <strong>leandro Serapio</strong>, desarrollador web Front End y un <strong>apasionado</strong> por el <strong>diseño</strong></h1>
 		<img src="images/hero.jpg" alt="imagen de leonidas" width="500" alt="imagen principal del sitio">
 	</section>
-	<section>
+	<section id="portafolio">
 		<h2>Portafolio (proyectos destacados)</h2>
 		<article>
 			<h3>Platzi Video</h3>
@@ -38,7 +38,7 @@
 			<img src="images/platzi-video-react-native.png" alt="proyecto del curso react native" width="500">
 			</article>
 	</section>
-	<section>
+	<section id="eventos">
 		<h2>Mas sobre mi experiencia</h2>
 		<article>
 			<figure>
@@ -46,8 +46,15 @@
 			</figure>
 			<h3>PlatziConf Mexico 2018</h3>
 			<p>El evento mas grande sobre gente que quiere aprender mas sobre internet</p>
+			<a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="blank">Ver Platica</a>
 		</article>
 	</section>
-	<section>Seccion contacto</section>
+	<section id="contacto">
+		<form action="/suscripcion/">
+			<h3>¿Listo para empezar?</h3>
+			<input type="text" id="email" placeholder="Déjame tu email" value="">	
+			<input type="submit" value="Enviar">		
+		</form>
+	</section>
 </body>
 </html>
