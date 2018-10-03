@@ -2,59 +2,75 @@
 <html lang="es,en">
 <head>
 	<meta charset="utf-8" />
-	<title>Hola! Soy leandro Serapio</title>
+	<title>Hola! Soy Leonidas Esteban</title>
 	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="css/style.css" type="">
 </head>
 <body>
-	<header>
-		<figure>
+
+
+	<header class="header">
+		<figure class="logo">
 			<img src="images/logo.png" alt="Logo de leandro serapio">
 		</figure>
-		<nav>
+		<nav class="menu">
 			<ol>
-				<a href="#portafolio">Portafolio</a>
+				<a class="link" href="#portafolio">Portafolio</a>
 			</ol>
 			<ol>
-				<a href="#eventos">Experiencia</a>
+				<a class="link" href="#eventos">Experiencia</a>
 			</ol>
 			<ol>
-				<a href="#contacto">Trabajemos juntos</a>
+				<a class="link" href="#contacto">Trabajemos juntos</a>
 			</ol>
 		</nav>
 	</header>
-	<section>
+	
+	
+	<section class="hero">
 		<h1>Hola! Soy <strong>leandro Serapio</strong>, desarrollador web Front End y un <strong>apasionado</strong> por el <strong>diseño</strong></h1>
 		<img src="images/hero.jpg" alt="imagen de leonidas" width="500" alt="imagen principal del sitio">
 	</section>
-	<section id="portafolio">
+	
+	
+	<section id="portafolio" class="portfolio">
 		<h2>Portafolio (proyectos destacados)</h2>
-		<article>
+		<article class="project-title">
 			<h3>Platzi Video</h3>
-			<h6>React Native / React</h6>
-			<p><small><strong>Fecha:</strong> 01/07/18</small></p>
-			<p><small><strong>Puedes verlo en:</strong>www.platzi.com/live</small></p>
-			<p>Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma
+			<h6 class="project-course">React Native / React</h6>
+			<p class="project-date"><small><strong>Fecha:</strong> 01/07/18</small></p>
+			<p class="project-url"><small><strong>Puedes verlo en:</strong>www.platzi.com/live</small></p>
+			<p class="project-descripcion">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma
 				El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.</p>
-			<img src="images/platzi-video-react-native.png" alt="proyecto del curso react native" width="500">
-			</article>
-	</section>
-	<section id="eventos">
-		<h2>Mas sobre mi experiencia</h2>
-		<article>
-			<figure>
-				<img src="images/platzi-conf.jpg" width="500" alt="">
+			<figure class="project-imageContainer">
+				<img class="project-image" src="images/platzi-video-react-native.png" alt="proyecto del curso react native" width="500">
 			</figure>
-			<h3>PlatziConf Mexico 2018</h3>
-			<p>El evento mas grande sobre gente que quiere aprender mas sobre internet</p>
-			<a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="blank">Ver Platica</a>
 		</article>
 	</section>
-	<section id="contacto">
-		<form action="/suscripcion/">
+
+
+	<section id="eventos">
+		<h2>Mas sobre mi experiencia</h2>
+		<article class="event">
+			<figure class="event-imageContainer">
+				<img class="event-image" src="images/platzi-conf.jpg" width="500" alt="">
+			</figure>
+			<h3 class="event-title">PlatziConf Mexico 2018</h3>
+			<p class="event-description">El evento mas grande sobre gente que quiere aprender mas sobre internet</p>
+			<a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="blank">Ver Platica</a>
+		</article>
+	</section>
+
+
+	<section id="contacto" class="contact">
+		<form class="form-email" action="/suscripcion/">
 			<h3>¿Listo para empezar?</h3>
 			<input type="text" id="email" placeholder="Déjame tu email" value="">	
 			<input type="submit" value="Enviar">		
 		</form>
 	</section>
+
+
+	<footer class="footer">Footer</footer>
 </body>
 </html>
