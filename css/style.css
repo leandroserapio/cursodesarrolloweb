@@ -30,7 +30,7 @@ h1{
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
-    margin:;
+    margin: 0;
 }
 
 h1 strong{
@@ -42,7 +42,8 @@ h1 strong{
     color: white;
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 70px;
+    align-items: center;
 
 }
 
@@ -82,7 +83,6 @@ figure{
     padding: 0 10px;
 }
 
-
 .hero{
     height: 300px;
     background-image: url("../images/hero.jpg");
@@ -91,6 +91,8 @@ figure{
     background-repeat: no-repeat;
     background-position-x: right;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .portfolio{
@@ -112,3 +114,18 @@ figure{
     display: flex;
 }
 
+.footer{
+    color: white;
+    background-color: #1d252c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
+}
