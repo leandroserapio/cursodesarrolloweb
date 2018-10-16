@@ -37,6 +37,15 @@ h1 strong{
     color: #026fff;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 .header{
     background-color: #1d252c;
     color: white;
@@ -97,6 +106,8 @@ figure{
 
 .portfolio{
     background-color: #fafafa;
+    padding: 20px;
+
 }
 
 .project-details{
@@ -108,10 +119,37 @@ figure{
     border: 1px solid grey;
     border-radius: 10px;
     padding: 20px;
-    margin: 10px;
     margin-bottom: 15px;
     background-color: white;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-details h3{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-course{
+    margin: 10px  0;
+}
+
+.project-date{
+    margin: 10px 0;
+}
+
+.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .footer{
@@ -120,6 +158,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 20px;
 }
 
 .footer img{
@@ -128,4 +167,120 @@ figure{
 
 .footer a{
     color: white;
+}
+
+.event-list{
+    display: flex;
+}
+
+.event{
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbfa;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    text-align: center;
+    margin: 20px 40px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+}
+
+.event-list-title{
+    margin-left: 20px;
+}
+
+.event-url{
+    border: 1px solid  #026fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #026fff;
+    border-radius: 5px;
+}
+
+.contact{
+    background-color:#026fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social{
+    margin-right: 10px;
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.github{
+    background-image: url('../images/github.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+    background-size: 50px 50px;
+}
+
+.form-email{
+    margin-left: 20px;
+}
+
+.form-email input{
+    border: 0.5px;
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px 20px;
+    /*background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;*/
+}
+
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border-style: solid;
+    border: 0.5px solid white;
+    padding: 8px 16px;  
+
+}
+
+.form-email h3{
+    margin-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
 }
