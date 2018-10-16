@@ -6,8 +6,10 @@ propiedades
 valores
 */
 
+
 body{
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 h1, 
@@ -28,6 +30,7 @@ h1{
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
+    margin:;
 }
 
 h1 strong{
@@ -37,12 +40,48 @@ h1 strong{
 .header{
     background-color: #1d252c;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
 }
 
 .header a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
+
+.menu{
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
 
 .hero{
     height: 300px;
@@ -54,8 +93,22 @@ h1 strong{
     color: white;
 }
 
-.project-details{
-    width: 500px;
+.portfolio{
+    background-color: #fafafa;
 }
 
+.project-details{
+    width: 500px;
+    
+}
+
+.project{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+    display: flex;
+}
 
