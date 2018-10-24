@@ -221,6 +221,7 @@ figure{
 
 .event-list-title{
     margin-left: 20px;
+    width: 100%;
 }
 
 .event-url{
@@ -242,7 +243,7 @@ figure{
 }
 
 .social{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .social-link{
@@ -396,5 +397,35 @@ figure{
     }
     .event{
         margin: 10px 20px;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email{
+        margin:0;
+        padding: 0 6%;
+    }
+    .form-email input{
+        width: 67%;
+        padding: 0;
+        height: 35px;
+        padding-left: 2%;
+    }
+    .form-email button{
+        display: initial;
+        width: 27%;
+        height: 36px;
+    }
+    .social{
+        margin: 1.1em 0 0;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
     }
 }
