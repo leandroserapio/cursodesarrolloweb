@@ -118,6 +118,8 @@ figure{
 
 }
 
+
+
 .project-details{
     width: 50%;
     
@@ -191,7 +193,7 @@ figure{
 .event-list{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .event{
@@ -323,6 +325,17 @@ figure{
     flex-wrap: inherit;
 }
 
+.video{
+    text-align: center;
+    margin: 30px 0 45px;
+}
+
+.html-video{
+    width: 98%;
+    height: auto;
+}
+
+
 @media screen and (max-width: 1024px){
 
     .hero{
@@ -360,6 +373,10 @@ figure{
 }
 
 @media screen and (max-width: 767px){
+
+    .video{
+        margin: .5em 15px 1.5em;
+    }
 
     .hero-image{
         top:-35px; 
