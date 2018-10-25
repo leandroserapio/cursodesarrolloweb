@@ -95,6 +95,7 @@ figure{
 
 .hero{
     height: 300px;
+    overflow: hidden;
     /*background-image: url("../images/hero.jpg");
     background-size: 500px 300px;
     background-repeat: no-repeat;
@@ -108,7 +109,7 @@ figure{
 }
 
 .hero-image{
-
+    height: auto;
 }
 
 .portfolio{
@@ -322,7 +323,49 @@ figure{
     flex-wrap: inherit;
 }
 
+@media screen and (max-width: 1024px){
+
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 7em 3em;
+    }
+    h1{
+        font-size:1.5em; 
+        z-index: 2;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.500);
+    }
+
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        left: 0;
+        
+        bottom: -325px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1023px){
+
+    .hero-image{
+        top:-80px; 
+        bottom: -325px;
+        
+    }
+
+}
+
 @media screen and (max-width: 767px){
+
+    .hero-image{
+        top:-35px; 
+        bottom: -250px;
+    }
+    
     .header{
         display: block;
         height: auto;
@@ -387,6 +430,15 @@ figure{
 }
 
 @media screen and (max-width: 480px){
+
+    .hero{
+        padding: 3em 1em;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
     .project-details{
         font-size: 12px;
     }
@@ -429,3 +481,4 @@ figure{
         border: 1px solid transparent;
     }
 }
+
