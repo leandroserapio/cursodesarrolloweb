@@ -396,7 +396,7 @@ figure{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: ##1d252ccc;
+    background-color: #1d252ccc;
     display: none;
     line-height: 40px;
     text-align: center;
@@ -450,6 +450,7 @@ figure{
 
     .burger-button{
         display: block;
+        z-index: 7;
     }
 
     .video{
@@ -471,11 +472,12 @@ figure{
     }
 
     .header ol li{
-        height: 35px;
+        height: 50px;
     }
 
     .header a{
         justify-content: center;
+        font-size: 1.5em;
     }
 
     .header .logo{
@@ -483,7 +485,23 @@ figure{
     }
 
     .menu{
-        position: 
+        position: fixed;
+        background-color: #026fffcc;
+        z-index: 6;
+        top: 0;
+        left: 0;
+        left: -100vw;
+        width: 100vw;
+        /*height: 100vh;*/
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        transition: .3s; 
+    }
+
+    .menu.is-active{
+        left: 0;
     }
 
     .project{
