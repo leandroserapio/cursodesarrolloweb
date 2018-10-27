@@ -14,14 +14,14 @@
 <body>
 
 
-	<i class="icon-menu burger-button" ></i>
+	<i class="icon-menu burger-button" id="burger-menu" ></i>
 	<header class="header">
 		<div class="container">
 			<figure class="logo">
 				<img src="images/logo.png" height="50" alt="Logo de leonidas Esteban">
 			</figure>
 	
-			<nav class="menu is-active">
+			<nav class="menu">
 				<ol>
 					<li class="link"><a href="#portafolio">Portafolio</a></li>
 					<li class="link"><a href="#eventos">Experiencia</a></li>
@@ -174,6 +174,20 @@
 			</div>
 		</div>
 	</footer>
-	<script></script>
+	<script>
+		const menu = document.querySelector('.menu');
+		const burgerButton = document.querySelector('#burger-menu');
+		
+		burgerButton.addEventListener('click', hideShow)
+
+		function hideShow(){
+			if( menu.classList.contains('is-active')){
+			menu.classList.remove('is-active');
+ 			} else{
+			menu.classList.add('is-active');
+			}
+		}
+		
+	</script>
 </body>
 </html>
