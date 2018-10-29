@@ -460,7 +460,7 @@ figure{
     }
 
     .video{
-        margin: .5em 15px 1em;
+        margin: .5em 15px .8em;
     }
 
     .flexible-video{
@@ -565,27 +565,7 @@ figure{
     }
 }
 
-@media screen and (max-width: 480px){
-
-    .hero{
-        padding: 3em 1em;
-    }
-
-    h1{
-        font-size: 1.5em;
-    }
-
-    .project-details{
-        font-size: 14px;
-    }
-
-    .event-detail{
-        margin: -2em .5em .5em;
-        padding: 1em;
-    }
-    .event{
-        margin: 10px 20px;
-    }
+@media screen and (max-width: 560px){
 
     .contact{
         height: auto;
@@ -611,6 +591,30 @@ figure{
     .social{
         margin: 1.1em 0 0;
     }
+}
+
+@media screen and (max-width: 480px){
+
+    .hero{
+        padding: 3em 1em;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    .project-details{
+        font-size: 14px;
+    }
+
+    .event-detail{
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .event{
+        margin: 10px 20px;
+    }
+
     .footer{
         display: block;
         text-align: center;
