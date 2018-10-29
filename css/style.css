@@ -44,7 +44,7 @@ h2 {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .header{
@@ -114,7 +114,7 @@ figure{
 
 .portfolio{
     background-color: #fafafa;
-    padding: 20px;
+    padding: 10px;
 
 }
 
@@ -448,13 +448,23 @@ figure{
 
 @media screen and (max-width: 767px){
 
+
+    h2{
+        font-size:1.1em;
+        margin-bottom: 35px;
+    }
+
     .burger-button{
         display: block;
         z-index: 7;
     }
 
     .video{
-        margin: .5em 15px 1.5em;
+        margin: .5em 15px 1em;
+    }
+
+    .flexible-video{
+        margin: .5em 19px 1.5em;
     }
 
     .hero-image{
@@ -506,6 +516,10 @@ figure{
         left: 0;
     }
 
+    .portfolio{
+        padding: 20px;
+    }
+
     .project{
         display: block;
     }
@@ -531,7 +545,7 @@ figure{
         font-size: 1em;
     }
     .project-description{
-        font-size: .8em
+        font-size: 1em
     }
     .project-course, .project-date, .project-url{
         margin: .3em 0;
@@ -546,6 +560,9 @@ figure{
         width: 100%;
     }
 
+    .caja-video{
+        margin-bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -559,7 +576,7 @@ figure{
     }
 
     .project-details{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .event-detail{
